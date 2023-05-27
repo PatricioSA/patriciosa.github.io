@@ -95,48 +95,15 @@ header {
     justify-content: space-evenly;
 }
 
-.projects .project-item {
-    width: 351px;
-    height: 450px;
-    position: relative;
-    border-radius: .5rem;
-    margin: 2rem 0 5rem 0;
-    background-color: #121212;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+.projects .card {
+    border: 2px solid blue;
 }
 
-.projects .img-project {
-    max-width: 351px;
-    height: 200px;
-    border-top-right-radius: .5rem;
-    border-top-left-radius: .5rem;
-}
-
-.projects .project-text {
-    padding: 1rem;
-}
-
-.projects .project-title, 
-.project-description {
-    color: #fff;
-}
-
-.btn-visualizar {
-    position: absolute;
-    bottom: 20px;
-    background-color: #2196f3;
-    width: 100px;
-    height: 35px;
-    border-radius: .5rem;
-}
-
-.btn-visualizar a {
-    color: #fff;
-    text-decoration: none;
-}
-
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .tecnologias .container {
+        width: 100%;
+    }
+    .projects .container {
         width: 100%;
     }
 }
