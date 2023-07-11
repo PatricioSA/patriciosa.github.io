@@ -86,10 +86,13 @@ header {
 
 .projects {
     background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.projects .container {
-    width: 50%;
+.projects .Container {
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -99,11 +102,11 @@ header {
     border: 2px solid blue;
 }
 
-@media (max-width: 600px) {
-    .tecnologias .container {
+@media (max-width: 1340px) {
+    .tecnologias .Container {
         width: 100%;
     }
-    .projects .container {
+    .projects .Container {
         width: 100%;
     }
 }
