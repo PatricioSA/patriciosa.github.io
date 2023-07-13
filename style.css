@@ -41,6 +41,20 @@ header {
     transition: transform 0.5s;
 }
 
+#resumo h1 {
+    /*definir um degradê como fundo */
+    background-image: linear-gradient(to right, #2196F3, #E4BA42, #5E3B7F);
+
+    /*apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    /*apagar o texto, deixando apenas o fundo atrás dele */
+    -webkit-text-fill-color: transparent;
+
+    font-size: 4rem;
+}
+
 .links-contacts:hover {
     background-color: #2196f3;
     transform: translateY(-5px);
@@ -61,7 +75,14 @@ header {
 }
 
 .titulo-secao {
-    color: #fff;
+    /* background: #FF5722; */
+    background: linear-gradient(to right, #FF5722 30%, #2196F3 10%, #E4BA42, #5E3B7F);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    font-size: 3rem;
     text-align: center;
     padding-top: 5rem;
 }
@@ -106,7 +127,16 @@ header {
     .tecnologias .Container {
         width: 100%;
     }
+
     .projects .Container {
         width: 100%;
+    }
+
+    .titulo-secao {
+        /* background: #FF5722; */
+        background: linear-gradient(to right, #FF5722 10%, #2196F3 20%, #E4BA42, #5E3B7F);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
