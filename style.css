@@ -156,7 +156,7 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
-@media (max-width: 1340px) {
+@media (max-width: 1375px) {
     .my-banner .links {
         gap: 0.5rem;
     }
@@ -167,6 +167,13 @@ html {
 
     .tecnologias .Container {
         width: 100%;
+    }
+    .tecnologias .Card {
+        width: 250px;
+        height: 350px;
+    }
+    .tecnologias .Card img {
+        width: 200px;
     }
 
     .projects .Container {
