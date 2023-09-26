@@ -88,18 +88,19 @@ html {
     min-height: 50vh;
     padding: 0 1rem;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
     background-color: #f9f5ff;
 }
 
-.about-me div {
+.about-me > div {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 2rem;
+    
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
-    max-width: 700px;
+    max-width: 80%;
     padding: 1rem 0;
+    margin: 0 auto;
 }
 
 .titulo-secao {
@@ -171,5 +172,9 @@ html {
 
     .projects .Container {
         width: 100%;
+    }
+
+    .about-me > div {
+        flex-wrap: wrap;
     }
 }
