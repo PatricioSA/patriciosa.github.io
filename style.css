@@ -84,14 +84,14 @@ html {
 }
 
 
-.about-me {
+#about-me {
     min-height: 50vh;
     padding: 0 1rem;
 
     background-color: #f9f5ff;
 }
 
-.about-me > div {
+#about-me > div {
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -104,7 +104,7 @@ html {
     margin: 0 auto;
 }
 
-.about-me #my-photo {
+#about-me #my-photo {
     border-radius: .5rem;
 }
 
@@ -183,7 +183,7 @@ html {
         width: 100%;
     }
 
-    .about-me > div {
+    #about-me > div {
         flex-wrap: wrap;
     }
 }
