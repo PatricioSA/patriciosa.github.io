@@ -17,3 +17,7 @@ window.onload = function () {
         AOS.init()
     };
 };
+
+function disableRightClick(event) {
+    event.preventDefault();
+}
