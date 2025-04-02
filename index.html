@@ -77,7 +77,7 @@
             <div oncontextmenu="disableRightClick(event)">
                 <img src="./img/photo.jpeg" alt="" width="300px" id="my-photo">
             </div>
-            <div>
+            <div class="text">
                 <p>
                     Tenho <span id="idade"></span> anos e estou desenvolvendo aplicações com JavaScript a 2 anos.
                     <br>
@@ -123,78 +123,181 @@
         <h2 class="titulo-secao">Projetos</h2>
         <div class="Container">
 
-            <div data-aos="flip-right" data-aos-duration="2000" class="card my-5 m-lg-5">
-                <img src="img/projetos/app-delivery.png" alt="Tela inicial do projeto" class="card-img-top">
-                <div class="card-body">
-                    <h2 class="card-title">Rapidex</h2>
-                    <p class="card-text">
+            <div class="relative mt-24" data-aos="flip-right" data-aos-duration="2000">
+                <div class="relative md-w-3-4 mx-auto">
+                    <!-- Tablet Frame -->
+                    <div class="relative z-10 bg-gray-800 rounded-2-5rem p-4 shadow-xl">
+                        <div class="relative rounded-2rem overflow-hidden bg-white aspect-4-3">
+                            <img src="img/projetos/app-delivery[tablet].png" alt="Tela inicial do projeto"
+                                class="object-cover w-full" />
+                        </div>
+                    </div>
+                    <!-- Phone Frame -->
+                    <div class="phone-frame bg-gray-800 rounded-2-5rem p-3 shadow-xl transform">
+                        <div class="relative rounded-2rem overflow-hidden bg-white aspect-9-19-5">
+                            <img src="img/projetos/app-delivery[phone].png" alt="Tela inicial do projeto"
+                                class="object-cover w-full" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center max-w-lg mx-auto">
+                    <h3 class="text-2xl mb-4">Rapidex</h3>
+                    <p class="text-gray-600 mb-6">
                         Sistema de delivery: atividade final feita no Bootcamp Falaê
                         administrado pela Codi Academy
                     </p>
-                    <a href="https://rapidex-patriciosa.vercel.app" class="btn btn-primary" target="_blank">Acessar</a>
+                    <a href="https://rapidex-patriciosa.vercel.app" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+                        Acessar
+                    </a>
                 </div>
             </div>
 
-            <div data-aos="flip-right" data-aos-duration="2000" class="card my-5 m-lg-5">
-                <img src="img/projetos/social-media.png" alt="Tela inicial do projeto" class="card-img-top">
-                <div class="card-body">
-                    <h2 class="card-title">Social Media App</h2>
-                    <p class="card-text">
+            <div class="relative mt-24" data-aos="flip-right" data-aos-duration="2000">
+                <div class="relative md-w-3-4 mx-auto">
+                    <!-- Tablet Frame -->
+                    <div class="relative z-10 bg-gray-800 rounded-2-5rem p-4 shadow-xl">
+                        <div class="relative rounded-2rem overflow-hidden bg-white aspect-4-3">
+                            <img src="img/projetos/social-media[tablet].png" alt="Tela inicial do projeto"
+                                class="object-cover w-full h-full" />
+                        </div>
+                    </div>
+                    <!-- Phone Frame -->
+                    <div class="phone-frame bg-gray-800 rounded-2-5rem p-3 shadow-xl transform">
+                        <div class="relative rounded-2rem overflow-hidden bg-white aspect-9-19-5">
+                            <img src="img/projetos/social-media[phone].png" alt="Tela inicial do projeto"
+                                class="object-cover w-full h-full" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center max-w-lg mx-auto">
+                    <h3 class="text-2xl mb-4">Social Media App</h3>
+                    <p class="text-gray-600 mb-6">
                         Este é um aplicativo simples de rede social no qual você pode compartilhar suas ideias e
                         interagir com outros usuários curtindo suas publicações.
-                        Em breve, terá mais alguns recursos, como comentários em postagens e acesso a algumas
-                        configurações de perfil.
                     </p>
                     <a href="https://social-app-livid-one.vercel.app/" class="btn btn-primary"
-                        target="_blank">Acessar</a>
+                        target="_blank" rel="noopener noreferrer">
+                        Acessar
+                    </a>
                 </div>
             </div>
 
-            <div data-aos="flip-right" data-aos-duration="2000" class="card my-5 m-lg-5">
-                <img src="img/projetos/controle-financeiro.png" alt="Tela inicial do projeto" class="card-img-top">
-                <div class="card-body">
-                    <h2 class="card-title">Controle Financeiro</h2>
-                    <p class="card-text">
+            <div class="relative mt-24" data-aos="flip-right" data-aos-duration="2000">
+                <div class="relative md-w-3-4 mx-auto">
+                    <!-- Tablet Frame -->
+                    <div class="relative z-10 bg-gray-800 rounded-2-5rem p-4 shadow-xl">
+                        <div class="relative rounded-2rem overflow-hidden bg-white aspect-4-3">
+                            <img src="img/projetos/controle-financeiro[tablet].png" alt="Tela inicial do projeto"
+                                class="object-cover w-full h-full" />
+                        </div>
+                    </div>
+                    <!-- Phone Frame -->
+                    <div class="phone-frame bg-gray-800 rounded-2-5rem p-3 shadow-xl transform">
+                        <div class="relative rounded-2rem overflow-hidden bg-white aspect-9-19-5">
+                            <img src="img/projetos/controle-financeiro[phone].png" alt="Tela inicial do projeto"
+                                class="object-cover w-full h-full" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center max-w-lg mx-auto">
+                    <h3 class="text-2xl mb-4">Controle Financeiro</h3>
+                    <p class="text-gray-600 mb-6">
                         Aplicação web simples de controle financeiro onde os usuários podem inserir suas receitas e
                         despesas para monitorar suas finanças.
                         A aplicação também inclui uma funcionalidade de cálculo de saldo, que exibe o saldo atual.
                     </p>
                     <a href="https://patriciosa.github.io/controle-financeiro-react" class="btn btn-primary"
-                        target="_blank">Visualizar</a>
+                        target="_blank" rel="noopener noreferrer">
+                        Acessar
+                    </a>
                 </div>
             </div>
 
-            <div data-aos="flip-right" data-aos-duration="2000" class="card my-5 m-lg-5" style="width: 350px;">
-                <img src="img/projetos/gerenciamento-estoque.png" alt="Capa do projeto" class="card-img-top">
-                <div class="card-body">
-                    <h2 class="card-title">Gerenciamento de estoque</h2>
-                    <p class="card-text">
+            <div class="relative mt-24" data-aos="flip-right" data-aos-duration="2000">
+                <div class="relative md-w-3-4 mx-auto">
+                    <!-- Tablet Frame -->
+                    <div class="relative z-10 bg-gray-800 rounded-2-5rem p-4 shadow-xl">
+                        <div class="relative rounded-2rem overflow-hidden bg-white aspect-4-3">
+                            <img src="img/projetos/gerenciamento-estoque[tablet].png" alt="Tela inicial do projeto"
+                                class="object-cover w-full" />
+                        </div>
+                    </div>
+                    <!-- Phone Frame -->
+                    <div class="phone-frame bg-gray-800 rounded-2-5rem p-3 shadow-xl transform">
+                        <div class="relative rounded-2rem overflow-hidden bg-white aspect-9-19-5">
+                            <img src="img/projetos/gerenciamento-estoque[phone].png" alt="Tela inicial do projeto"
+                                class="object-cover w-full h-full" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center max-w-lg mx-auto">
+                    <h3 class="text-2xl mb-4">Gerenciamento de Estoque</h3>
+                    <p class="text-gray-600 mb-6">
                         Adicione, atualize e exclua itens com esta aplicação simples e fácil
                         de usar
                     </p>
-                    <a href="https://patriciosa.github.io/gerenciamento-estoque" class="btn btn-primary">Visualizar</a>
+                    <a href="https://patriciosa.github.io/gerenciamento-estoque" class="btn btn-primary"
+                        target="_blank" rel="noopener noreferrer">
+                        Acessar
+                    </a>
                 </div>
             </div>
 
-            <div data-aos="flip-right" data-aos-duration="2000" class="card my-5 m-lg-5" style="width: 350px;">
-                <img src="img/projetos/car-showcase.png" alt="Capa do projeto" class="card-img-top">
-                <div class="card-body">
-                    <h2 class="card-title">Car Showcase</h2>
-                    <p class="card-text">
+            <div class="relative mt-24" data-aos="flip-right" data-aos-duration="2000">
+                <div class="relative md-w-3-4 mx-auto">
+                    <!-- Tablet Frame -->
+                    <div class="relative z-10 bg-gray-800 rounded-2-5rem p-4 shadow-xl">
+                        <div class="relative rounded-2rem overflow-hidden bg-white aspect-4-3">
+                            <img src="img/projetos/app-delivery.png" alt="Tela inicial do projeto"
+                                class="object-cover w-full h-full" />
+                        </div>
+                    </div>
+                    <!-- Phone Frame -->
+                    <div class="phone-frame bg-gray-800 rounded-2-5rem p-3 shadow-xl transform">
+                        <div class="relative rounded-2rem overflow-hidden bg-white aspect-9-19-5">
+                            <img src="img/projetos/app-delivery.png" alt="Tela inicial do projeto"
+                                class="object-cover w-full h-full" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center max-w-lg mx-auto">
+                    <h3 class="text-2xl mb-4">Car Showcase</h3>
+                    <p class="text-gray-600 mb-6">
                         Explore e encontre seus carros preferidos
                     </p>
                     <a href="https://cars-showcase-steel.vercel.app" class="btn btn-primary"
-                        target="_blank">Visualizar</a>
+                        target="_blank" rel="noopener noreferrer">
+                        Acessar
+                    </a>
                 </div>
             </div>
 
-            <div data-aos="flip-right" data-aos-duration="2000" class="card my-5 m-lg-5" style="width: 350px;">
-                <img src="img/projetos/lista-de-tarefas.png" alt="Tela inicial do projeto" class="card-img-top">
-                <div class="card-body">
-                    <h2 class="card-title">To Do List</h2>
-                    <p class="card-text">Meu primeiro projeto usando JavaScript</p>
+            <div class="relative mt-24" data-aos="flip-right" data-aos-duration="2000">
+                <div class="relative md-w-3-4 mx-auto">
+                    <!-- Tablet Frame -->
+                    <div class="relative z-10 bg-gray-800 rounded-2-5rem p-4 shadow-xl">
+                        <div class="relative rounded-2rem overflow-hidden bg-white aspect-4-3">
+                            <img src="img/projetos/app-delivery.png" alt="Tela inicial do projeto"
+                                class="object-cover w-full h-full" />
+                        </div>
+                    </div>
+                    <!-- Phone Frame -->
+                    <div class="phone-frame bg-gray-800 rounded-2-5rem p-3 shadow-xl transform">
+                        <div class="relative rounded-2rem overflow-hidden bg-white aspect-9-19-5">
+                            <img src="img/projetos/app-delivery.png" alt="Tela inicial do projeto"
+                                class="object-cover w-full h-full" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 text-center max-w-lg mx-auto">
+                    <h3 class="text-2xl mb-4">ToDo List</h3>
+                    <p class="text-gray-600 mb-6">
+                        Meu primeiro projeto usando JavaScript
+                    </p>
                     <a href="https://patriciosa.github.io/ToDo-List" class="btn btn-primary"
-                        target="_blank">Visualizar</a>
+                        target="_blank" rel="noopener noreferrer">
+                        Acessar
+                    </a>
                 </div>
             </div>
     </section>
