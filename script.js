@@ -10,10 +10,10 @@ window.addEventListener('scroll', () => {
 //carrega a animação depois que a imagem de fundo for carregada
 window.onload = function () {
     var backgroundImg = new Image()
-    backgroundImg.src = "img/background-azul.jpg"
+    backgroundImg.src = "img/background-azul.webp"
     backgroundImg.onload = function () {
         var bannerSection = document.getElementById('my-banner')
-        bannerSection.style.backgroundImage = "url('img/background-azul.jpg')"
+        bannerSection.style.backgroundImage = "url('img/background-azul.webp')"
         AOS.init()
     };
 };
