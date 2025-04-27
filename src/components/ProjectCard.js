@@ -3,50 +3,50 @@ const projects = [
         title: "Website",
         description: "WebSite desenvolvido para o escritório de advocacia Abner Cruz",
         link: "https://abnercruzadvocacia.com.br",
-        imgPhone: "/src/img/projects/websiteabnercruz[phone].webp",
-        imgTablet: "/src/img/projects/websiteabnercruz[tablet].webp"
+        imgPhone: "/img/websiteabnercruz[phone].webp",
+        imgTablet: "/img/websiteabnercruz[tablet].webp"
     },
     {
         title: "Rapidex",
         description: "Sistema de delivery: atividade final feita no Bootcamp Falaê, administrado pela Codi Academy",
         link: "https://rapidex-patriciosa.vercel.app",
-        imgPhone: "/src/img/projects/rapidex[phone].webp",
-        imgTablet: "/src/img/projects/rapidex[tablet].webp"
+        imgPhone: "/img/rapidex[phone].webp",
+        imgTablet: "/img/rapidex[tablet].webp"
     },
     {
         title: "Login",
         description: "Simulação de login com validações.",
         link: "https://patriciosa.github.io/loginValidationReact/",
-        imgPhone: "/src/img/projects/login[phone].png",
-        imgTablet: "/src/img/projects/login[tablet].png"
+        imgPhone: "/img/login[phone].webp",
+        imgTablet: "/img/login[tablet].webp"
     },
     {
         title: "Social Media App",
         description: "Este é um aplicativo simples de rede social no qual você pode compartilhar suas ideias e interagir com outros usuários curtindo suas publicações.",
         link: "https://social-app-livid-one.vercel.app/",
-        imgPhone: "/src/img/projects/social-media[phone].png",
-        imgTablet: "/src/img/projects/social-media[tablet].png"
+        imgPhone: "/img/social-media[phone].webp",
+        imgTablet: "/img/social-media[tablet].webp"
     },
     {
         title: "Controle Financeiro",
         description: "Aplicação web simples de controle financeiro onde os usuários podem inserir suas receitas e despesas para monitorar suas finanças. A aplicação também inclui uma funcionalidade de cálculo de saldo, que exibe o saldo atual.",
         link: "https://patriciosa.github.io/controle-financeiro-react",
-        imgPhone: "/src/img/projects/controle-financeiro[phone].png",
-        imgTablet: "/src/img/projects/controle-financeiro[tablet].png"
+        imgPhone: "/img/controle-financeiro[phone].webp",
+        imgTablet: "/img/controle-financeiro[tablet].webp"
     },
     {
         title: "Gerenciamento de Estoque",
         description: "Adicione, atualize e exclua itens com esta aplicação simples e fácil de usar.",
         link: "https://patriciosa.github.io/gerenciamento-estoque",
-        imgPhone: "/src/img/projects/gerenciamento-estoque[phone].png",
-        imgTablet: "/src/img/projects/gerenciamento-estoque[tablet].png"
+        imgPhone: "/img/gerenciamento-estoque[phone].webp",
+        imgTablet: "/img/gerenciamento-estoque[tablet].webp"
     },
     {
         title: "ToDo List",
         description: "Meu primeiro projeto usando JavaScript.",
         link: "https://patriciosa.github.io/ToDo-List",
-        imgPhone: "/src/img/projects/lista-de-tarefas[phone].png",
-        imgTablet: "/src/img/projects/lista-de-tarefas[tablet].png"
+        imgPhone: "/img/lista-de-tarefas[phone].webp",
+        imgTablet: "/img/lista-de-tarefas[tablet].webp"
     },
 ]
 
@@ -68,6 +68,7 @@ function createProjectElement({ title, description, link, imgPhone, imgTablet })
   const tabletInner = document.createElement("div");
   tabletInner.className = "relative rounded-[2rem] overflow-hidden bg-white aspect-[4/3]";
   const imgT = document.createElement("img");
+  imgT.loading = "lazy"
   imgT.src = imgTablet;
   imgT.alt = `Visão em tablet de ${title}`;
   imgT.className = "object-cover w-full h-full";
@@ -82,6 +83,7 @@ function createProjectElement({ title, description, link, imgPhone, imgTablet })
   const phoneInner = document.createElement("div");
   phoneInner.className = "relative rounded-3xl overflow-hidden bg-white aspect-[9/19.5]";
   const imgP = document.createElement("img");
+  imgP.loading = "lazy"
   imgP.src = imgPhone;
   imgP.alt = `Visão em smartphone de ${title}`;
   imgP.className = "object-cover w-full h-full";
