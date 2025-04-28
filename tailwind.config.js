@@ -25,6 +25,7 @@ export default {
         'fade-in': 'fadeIn 1s ease-in-out',
         'slide-up': 'slideUp 0.5s ease-out',
         'bounce-slow': 'bounce 3s infinite',
+        'bounce-fast': 'bounce 1.8s infinite',
       },
       keyframes: {
         fadeIn: {
