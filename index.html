@@ -4,10 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio Patrício</title>
+  <meta name="description" content="Desenvolvedor JavaScript">
+  <title>Dev Patrício</title>
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  <script type="module" crossorigin src="/assets/index-BIbn6AAg.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-DayyI9tN.css">
+  <script type="module" crossorigin src="/assets/index-DdWxps3v.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DeI2huUR.css">
 </head>
 
 <body class="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
@@ -28,7 +29,8 @@
           class="nav-link text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors">Contato</a>
       </nav>
       <div class="flex items-center space-x-4">
-        <button id="theme-toggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition-colors">
+        <button id="theme-toggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 transition-colors"
+          aria-label="Trocar tema da página">
           <!-- Sun icon for dark mode -->
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-800 dark:hidden" fill="none"
             viewBox="0 0 24 24" stroke="currentColor">
@@ -42,7 +44,7 @@
               d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
           </svg>
         </button>
-        <button id="mobile-menu-button"
+        <button id="mobile-menu-button" aria-label="Menu"
           class="md:hidden p-2 rounded-md text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -72,11 +74,13 @@
     <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
       <div class="md:w-1/2 text-center md:text-left mb-10 md:mb-0 animate-fade-in">
         <h1 class="text-4xl md:text-6xl font-bold mb-4">
-          <span class="text-primary-600 dark:text-primary-400">Olá, Eu sou o</span>
+          <span class="text-primary-600 dark:text-primary-400">Olá, eu sou o</span>
           <br>
           <span class="text-gray-900 dark:text-white">Patrício</span>
         </h1>
-        <h2 class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6">JavaScript Developer</h2>
+        <h2 class="text-xl md:text-2xl text-gray-600 dark:text-gray-400 mb-6">
+          JavaScript Developer
+        </h2>
         <p class="text-gray-700 dark:text-gray-300 mb-8 max-w-lg mx-auto md:mx-0">
           Eu crio sites bonitos e responsivos que ajudam as empresas a crescerem.
         </p>
@@ -98,11 +102,14 @@
             <img src="/assets/hero-eCwpRtyf.webp" alt="Profile" class="w-full h-full object-cover">
           </div>
           <div
-            class="absolute -bottom-4 -right-4 w-24 h-24 bg-primary-400 dark:bg-primary-600 rounded-full animate-bounce-slow">
+            class="absolute -bottom-4 -right-4 w-24 h-24 bg-primary-400 dark:bg-primary-600 rounded-full animate-bounce-slow flex items-center justify-center">
+            <i class='bx bx-code-alt bx-lg text-white'></i>
           </div>
           <div
-            class="absolute -top-4 -left-4 w-16 h-16 bg-primary-300 dark:bg-primary-700 rounded-full animate-bounce-slow"
-            style="animation-delay: 0.5s"></div>
+            class="absolute -top-4 -left-4 w-16 h-16 bg-primary-300 dark:bg-primary-700 rounded-full animate-bounce-slow flex items-center justify-center"
+            style="animation-delay: 0.5s">
+            <i class='bx bx-code-alt bx-md text-white'></i>
+          </div>
         </div>
       </div>
     </div>
@@ -127,19 +134,34 @@
             </div>
           </div>
         </div>
-        <div class="md:w-1/2 md:pl-12 reveal">
+        <div class="md:w-3/5 md:pl-12 reveal">
           <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">Minha Jornada</h3>
           <p class="text-gray-700 dark:text-gray-300 mb-6">
-            Tenho 24 anos e estou desenvolvendo aplicações com JavaScript há 2 anos.
-            Meu portfólio inclui um site de delivery e uma aplicação de controle financeiro intuitiva.
+            Sou um desenvolvedor JavaScript, atuando há 2 anos no desenvolvimento de aplicações web.
+            Atualmente, curso Análise e Desenvolvimento de Sistemas, o que complementa minha formação técnica e
+            fortalece minha base teórica.
           </p>
-          <p class="text-gray-700 dark:text-gray-300 mb-6">
-            Atualmente, estou cursando Análise e Desenvolvimento de Sistemas.
+          <p class="text-gray-700 dark:text-gray-300 mb-3">
+            Meu portfólio inclui:
           </p>
+          <ul class="text-gray-700 dark:text-gray-300 mb-6">
+            <li>
+              <strong>Plataforma de Delivery:</strong>
+              Desenvolvi uma aplicação web responsiva, integrando funcionalidades de pedidos online e gerenciamento de
+              entregas,
+              utilizando React no front-end e Node.js no back-end.
+            </li>
+            <li>
+              <strong>Site para Escritório de Advocacia:</strong>
+              Criei um site moderno e funcional para um escritório jurídico, com foco em responsividade, navegação clara
+              e apresentação profissional dos serviços. O projeto envolveu organização de conteúdo, otimização de
+              desempenho e aplicação de boas práticas de SEO.
+            </li>
+          </ul>
           <p class="text-gray-700 dark:text-gray-300 mb-6">
-            Meu objetivo como programador JavaScript é adquirir habilidades sólidas na linguagem e suas bibliotecas,
-            React e Node.js. Estou entusiasmado para contribuir com projetos inovadores que fazem a diferença, sinta-se
-            livre para entrar em contato.
+            Se você procura um desenvolvedor comprometido, com foco em soluções eficientes e escaláveis, estou à
+            disposição para colaborar em
+            novos desafios.
           </p>
           <div class="grid grid-cols-2 gap-4 mb-6">
             <div>
@@ -208,7 +230,8 @@
         <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Entre em Contato</h2>
         <div class="w-24 h-1 bg-primary-500 mx-auto"></div>
         <p class="text-gray-700 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
-          Tem um projeto em mente ou deseja colaborar? Fique à vontade para entrar em contato comigo usando o formulário abaixo.
+          Tem um projeto em mente ou deseja colaborar? Fique à vontade para entrar em contato comigo usando o formulário
+          abaixo.
         </p>
       </div>
       <div class="flex flex-col md:flex-row gap-12">
@@ -238,9 +261,9 @@
                 class="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-primary-500 bg-white dark:bg-gray-800 text-gray-900 dark:text-white transition-colors"
                 placeholder="Sua mensagem aqui..."></textarea>
             </div>
-            <button type="submit"
-              class="w-full px-8 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-md transition-colors shadow-lg hover:shadow-xl">
-              Enviar Mensagem
+            <button type="button" onclick="alert('Função em desenvolvimento.\nEntre contato pelo telefone ou email ao lado')"
+              class="w-full px-8 py-3 bg-primary-600/50 text-white rounded-md transition-colors shadow-lg hover:shadow-xl">
+              Indisponível no momento
             </button>
           </form>
         </div>
@@ -259,7 +282,8 @@
                 </div>
                 <div>
                   <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Telefone</h4>
-                  <a href="https://api.whatsapp.com/send?phone=+5532988158597&text=Olá!" target="_blank" rel="noopener noreferrer">(32)98815-8597</a>
+                  <a href="https://api.whatsapp.com/send?phone=+5532988158597&text=Olá!" target="_blank"
+                    rel="noopener noreferrer">(32)98815-8597</a>
                 </div>
               </div>
               <div class="flex items-start">
@@ -281,14 +305,16 @@
               <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-4">Me Siga</h4>
               <div class="flex space-x-4">
                 <a href="https://www.linkedin.com/in/patriciosamuel/" target="_blank" rel="noopener noreferrer"
-                  class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors">
+                  class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors"
+                  aria-label="Ir para o perfil do Linkedin">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                     <path
                       d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
                   </svg>
                 </a>
                 <a href="https://github.com/PatricioSA" target="_blank" rel="noopener noreferrer"
-                  class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors">
+                  class="w-10 h-10 bg-primary-100 dark:bg-primary-900 rounded-full flex items-center justify-center text-primary-600 dark:text-primary-400 hover:bg-primary-200 dark:hover:bg-primary-800 transition-colors"
+                  aria-label="Ir para o perfil do Github">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                     <path
                       d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
