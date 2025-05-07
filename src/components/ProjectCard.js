@@ -14,6 +14,13 @@ const projects = [
         imgTablet: "/img/rapidex[tablet].webp"
     },
     {
+        title: "Kanban",
+        description: "Um aplicativo de gerenciamento de tarefas no estilo Kanban, em desenvolvimento com React, TypeScript, ANT Design e Vite.",
+        link: "https://github.com/PatricioSA/kanban",
+        imgPhone: "/img/kanban[phone].webp",
+        imgTablet: "/img/kanban[tablet].webp"
+    },
+    {
         title: "Login",
         description: "Simulação de login com validações.",
         link: "https://patriciosa.github.io/loginValidationReact/",
